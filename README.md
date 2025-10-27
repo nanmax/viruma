@@ -77,8 +77,7 @@ cp .env.example .env
 # Edit .env with your database credentials
 
 # Setup database
-createdb article_hub
-psql -d article_hub -f database.sql
+psql -U username -h localhost -f database.sql
 
 # Start development server
 npm run dev
